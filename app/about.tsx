@@ -4,13 +4,13 @@ const About = () => {
   return (
     <header
       id="about"
-      className="flex flex-col justify-center lg:flex-row lg:justify-around items-center gap-4 h-screen"
+      className="flex flex-col sm:justify-center lg:flex-row lg:justify-around sm:items-center gap-4 sm:h-screen"
     >
-      <div className="flex gap-8 sm:gap-16 lg:max-h-screen lg:flex-col lg:gap-0">
+      <div className="flex sm:gap-16 lg:max-h-screen lg:flex-col lg:gap-0">
         <Image
           src="selfportrait.jpg"
           alt="portrait of Jackson"
-          className="rounded-full max-sm:w-56 max-sm:h-56 grayscale hover:grayscale-0 hover:outline-4 hover:outline-offset-8 hover:outline-sky-400 outline-none transition-all ease-in-out duration-300"
+          className="rounded-full max-sm:w-0 max-sm:h-0 grayscale hover:grayscale-0 hover:outline-4 hover:outline-offset-8 hover:outline-sky-400 outline-none transition-all ease-in-out duration-300 "
           width={300}
           height={300}
         />

@@ -17,12 +17,12 @@ const Navbar = () => {
         </li>
         <li>
           <a className={classes}>
-            <span className="text-sky-400">2.</span> Projects
+            <span className="text-sky-400">3.</span> Projects
           </a>
         </li>
         <li>
           <a className={classes}>
-            <span className="text-sky-400">2.</span> Contact
+            <span className="text-sky-400">4.</span> Contact
           </a>
         </li>
       </ul>

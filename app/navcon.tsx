@@ -8,7 +8,7 @@ hover:-translate-y-0.5 focus-visible:-translate-y-0.5 hover:scale-105 focus-visi
 
 const Navcon = () => {
   return (
-    <div className="nav fixed bottom-0 left-10 max-lg:hidden">
+    <div className="fixed bottom-0 left-10 max-lg:hidden">
       <ul className="flex flex-col gap-2 items-center after:content-[' '] after:w-px after:h-20 after:bg-slate-200">
         <li>
           <a

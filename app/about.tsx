@@ -8,7 +8,7 @@ const About = () => {
     >
       <div className="flex gap-8 sm:gap-16 lg:max-h-screen lg:flex-col lg:gap-0">
         <Image
-          src="/selfportrait.jpg"
+          src="selfportrait.jpg"
           alt="portrait of Jackson"
           className="rounded-full max-sm:w-56 max-sm:h-56"
           width={300}

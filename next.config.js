@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: 'export',
+}
 
 nextConfig.webpack = (config, context) => {
     config.module.rules.push({

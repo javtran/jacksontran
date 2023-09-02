@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GitHub from "../../public/github.svg";
 import LinkedIn from "../../public/linkedin.svg";
 import Instagram from "../../public/instagram.svg";

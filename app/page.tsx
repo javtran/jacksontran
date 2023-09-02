@@ -1,7 +1,8 @@
 import Image from "next/image";
-import About from "./about";
-import Navbar from "./navbar";
-import Navcon from "./navcon";
+import About from "./components/sections/about";
+import Navbar from "./components/navbar";
+import Navcon from "./components/navcon";
+import Jobs from "./components/sections/jobs";
 
 export default function Home() {
   return (
@@ -22,9 +23,7 @@ export default function Home() {
       "
       >
         <About />
-        <div id="experience" className="block w-100 p-40 bg-slate-200">
-          asdfasdfasdfasdf
-        </div>
+        <Jobs />
       </div>
     </div>
   );

@@ -26,8 +26,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="pt-4 lg:w-1/2 lg:py-24">
-        <h2 className="text-3xl uppercase text-slate-200 font-medium mb-4">
+      <div className="sm:pt-4 lg:w-1/2 lg:py-24 max-sm:mt-16">
+        <h2 className="text-3xl uppercase text-slate-200 font-medium mb-6">
           <span className="text-sky-400">1.</span> About
         </h2>
         <p className="mb-4">

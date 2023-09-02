@@ -80,9 +80,9 @@ const Jobs = () => {
           <p className="mt-2">{data.description}</p>
           {data.projects && (
             <ul className="mt-2 flex flex-wrap">
-              {data.projects.map((project: any) => {
+              {data.projects.map((project: any, i: number) => {
                 return (
-                  <li className="mr-4 mt-2">
+                  <li key={i} className="mr-4 mt-2">
                     <a
                       href={project.url}
                       target="_blank"
@@ -98,9 +98,9 @@ const Jobs = () => {
           )}
           {data.skills && (
             <ul className="mt-2 flex flex-wrap">
-              {data.skills.map((skill: any) => {
+              {data.skills.map((skill: any, i: number) => {
                 return (
-                  <li className="mr-2 mt-2">
+                  <li key={i} className="mr-2 mt-2">
                     <span className="bg-sky-400/20 px-4 py-1 rounded-full text-sky-400 font-medium text-sm">
                       {skill}
                     </span>

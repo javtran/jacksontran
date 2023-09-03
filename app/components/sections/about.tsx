@@ -2,6 +2,7 @@ import Image from "next/image";
 import GitHub from "../../../public/github.svg";
 import LinkedIn from "../../../public/linkedin.svg";
 import Instagram from "../../../public/instagram.svg";
+import Email from "../../../public/email.svg";
 import SectionHeader from "../sectionheader";
 
 const About = () => {
@@ -55,6 +56,15 @@ const About = () => {
                 className={iconClass}
               >
                 <Instagram className="fill-inherit" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:jackson.tran00@gmail.com"
+                target="_blank"
+                className={iconClass}
+              >
+                <Email className="fill-inherit" />
               </a>
             </li>
           </ul>

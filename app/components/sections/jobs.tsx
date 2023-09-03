@@ -1,19 +1,19 @@
 import Link from "../../../public/link.svg";
 import SectionHeader from "../sectionheader";
-import Job from "../job";
+import SectionListItem from "../sectionlistitem";
 
 const Jobs = () => {
   const data = [
     {
       company: "OpenStreetMap",
-      company_url: "https://www.openstreetmap.org/",
+      url: "https://www.openstreetmap.org/",
       role: "Open Source Contributor",
       start_date: "2022",
       end_date: "Present",
       description: `Collaborating with other web developers globally on MapRoulette to implement new features 
         and tend to GitHub issues, including the UI of issue tracking system, administrative database analytics, and
         public pages.`,
-      projects: [
+      links: [
         {
           title: "MapRoulette",
           url: "https://maproulette.org/",
@@ -23,7 +23,7 @@ const Jobs = () => {
     },
     {
       company: "Tech4Good Lab",
-      company_url: "https://tech4good.soe.ucsc.edu/#/",
+      url: "https://tech4good.soe.ucsc.edu/#/",
       role: "Research and Developer Intern",
       start_date: "Mar 2022",
       end_date: "Aug 2023",
@@ -31,7 +31,7 @@ const Jobs = () => {
         research projects aimed to support community flourishment in work, education, community engagement, and governance.
         Served as a lead developer, overseeing and guiding a team in the design, development, and implementation of 
         complex research web application.`,
-      projects: [
+      links: [
         {
           title: "Annota",
           url: "https://annota.soe.ucsc.edu/",
@@ -45,7 +45,7 @@ const Jobs = () => {
     },
     {
       company: "ChargePoint",
-      company_url: "https://www.chargepoint.com/",
+      url: "https://www.chargepoint.com/",
       role: "Software Engineer Intern",
       start_date: "Feb",
       end_date: "Mar 2023",
@@ -55,7 +55,7 @@ const Jobs = () => {
     },
     {
       company: "DevMission, Code for San Francisco",
-      company_url: "https://devmission.org/programs/",
+      url: "https://devmission.org/programs/",
       role: "Full Stack Fellow",
       start_date: "June",
       end_date: "Sep 2022",
@@ -74,7 +74,7 @@ const Jobs = () => {
           data.map((data, i) => {
             return (
               <div key={i}>
-                <Job {...data}></Job>
+                <SectionListItem {...data}></SectionListItem>
               </div>
             );
           })}

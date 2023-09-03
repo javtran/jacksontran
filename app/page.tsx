@@ -19,7 +19,7 @@ export default function Home() {
         </a>
       </div>
       <div
-        className="mx-auto min-h-screen max-w-screen-xl selection:bg-sky-400 selection:text-sky-900 px-8 max-sm:pt-20 sm:px-10 md:px-28
+        className="mx-auto min-h-screen max-w-screen-xl selection:bg-sky-400 selection:text-sky-900 px-8 max-sm:pt-20 md:px-16 lg:px-28
       "
       >
         <About />

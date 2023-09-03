@@ -2,15 +2,16 @@ import Image from "next/image";
 import GitHub from "../../../public/github.svg";
 import LinkedIn from "../../../public/linkedin.svg";
 import Instagram from "../../../public/instagram.svg";
+import SectionHeader from "../sectionheader";
 
 const About = () => {
   const iconClass = `block fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400 transition duration-300 ease-in-out transform`;
   return (
     <header
       id="about"
-      className="flex flex-col sm:justify-center lg:flex-row lg:justify-around sm:items-center sm:gap-8 sm:h-screen"
+      className="flex flex-col sm:justify-center lg:flex-row lg:justify-around sm:items-center sm:gap-8 sm:min-h-screen"
     >
-      <div className="flex sm:gap-16 lg:max-h-screen lg:flex-col lg:gap-0">
+      <div className="flex sm:gap-16 lg:flex-col lg:gap-0">
         <Image
           src="selfportrait.jpg"
           alt="portrait of Jackson"
@@ -60,10 +61,7 @@ const About = () => {
         </div>
       </div>
       <div className="sm:pt-4 lg:w-1/2 lg:py-24 max-sm:mt-16">
-        <h2 className="flex items-center text-3xl uppercase text-slate-200 font-medium mb-6 after:block after:ml-4 after:content-[' '] after:w-48 after:h-px after:bg-slate-200 after:max-lg:w-full">
-          <span className="text-sky-400">1.</span>
-          <span className="">About</span>
-        </h2>
+        <SectionHeader index={1} title="About"></SectionHeader>
         <p className="mb-4">
           Back in high school, I tried at making a prank web page to play a joke
           on my friends for April Fools, and got myself into the world of coding

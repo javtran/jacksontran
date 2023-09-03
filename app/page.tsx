@@ -1,8 +1,8 @@
-import Image from "next/image";
 import About from "./components/sections/about";
 import Navbar from "./components/navbar";
 import Navcon from "./components/navcon";
 import Jobs from "./components/sections/jobs";
+import Projects from "./components/sections/projects";
 
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
       >
         <About />
         <Jobs />
+        <Projects />
       </div>
     </div>
   );

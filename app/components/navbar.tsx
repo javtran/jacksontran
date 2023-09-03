@@ -16,7 +16,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a className={tabClasses}>
+          <a href="#projects" className={tabClasses}>
             <span className="text-sky-400">3.</span> Projects
           </a>
         </li>

@@ -1,4 +1,6 @@
 import Link from "../../../public/link.svg";
+import SectionHeader from "../sectionheader";
+import Job from "../job";
 
 const Jobs = () => {
   const data = [
@@ -61,71 +63,16 @@ const Jobs = () => {
       skills: ["React", "Node.js", "Express.js", "Figma"],
     },
   ];
-  const jobElement = (data: any) => {
-    return (
-      <div className="grid sm:grid-cols-12 gap-4 mb-12">
-        <p className="text-sm uppercase font-semibold text-slate-500 sm:col-span-2 tracking-wide mt-1 mb-2">
-          {data.start_date} — {data.end_date}
-        </p>
-        <div className="grid sm:col-span-10">
-          <a
-            href={data.company_url}
-            target="_blank"
-            className="text-lg font-medium text-slate-200 hover:text-sky-400 focus-visible:text-sky-400"
-          >
-            <span>
-              {data.role} · {data.company}
-            </span>
-          </a>
-          <p className="mt-2">{data.description}</p>
-          {data.projects && (
-            <ul className="mt-2 flex flex-wrap">
-              {data.projects.map((project: any, i: number) => {
-                return (
-                  <li key={i} className="mr-4 mt-2">
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      className="text-sm inline-flex items-center font-medium text-slate-300 hover:text-sky-400 focus-visible:text-sky-400 fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400"
-                    >
-                      <Link className="fill-inherit mr-1" />
-                      <span>{project.title}</span>
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-          {data.skills && (
-            <ul className="mt-2 flex flex-wrap">
-              {data.skills.map((skill: any, i: number) => {
-                return (
-                  <li key={i} className="mr-2 mt-2">
-                    <span className="bg-sky-400/20 px-4 py-1 rounded-full text-sky-400 font-medium text-sm">
-                      {skill}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-          <ul className="mt-2 flex flex-wrap"></ul>
-        </div>
-      </div>
-    );
-  };
   return (
     <div
       id="experience"
-      className="max-sm:mt-16 sm:h-screen flex flex-col md:justify-center"
+      className="pt-16 sm:min-h-screen flex flex-col md:justify-center"
     >
       <div>
-        <h2 className="flex items-center text-3xl uppercase text-slate-200 font-medium mb-6 after:block after:ml-4 after:content-[' '] after:w-48 after:h-px after:bg-slate-200 after:max-lg:w-full">
-          <span className="text-sky-400">2.</span> Experience
-        </h2>
+        <SectionHeader index={2} title="Experience"></SectionHeader>
         {data &&
-          data.map((job) => {
-            return jobElement(job);
+          data.map((data) => {
+            return <Job {...data}></Job>;
           })}
       </div>
     </div>

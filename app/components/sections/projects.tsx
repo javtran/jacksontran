@@ -36,7 +36,9 @@ const Projects = () => {
         {data &&
           data.map((data, i) => {
             return (
-              <SectionListItem {...{ index: i, ...data }}> </SectionListItem>
+              <div key={i}>
+                <SectionListItem {...{ index: i, ...data }}> </SectionListItem>
+              </div>
             );
           })}
       </div>

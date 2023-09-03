@@ -71,8 +71,12 @@ const Jobs = () => {
       <div>
         <SectionHeader index={2} title="Experience"></SectionHeader>
         {data &&
-          data.map((data) => {
-            return <Job {...data}></Job>;
+          data.map((data, i) => {
+            return (
+              <div key={i}>
+                <Job {...data}></Job>
+              </div>
+            );
           })}
       </div>
     </div>

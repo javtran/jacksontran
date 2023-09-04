@@ -3,7 +3,7 @@ import LinkedIn from "../../public/linkedin.svg";
 import Instagram from "../../public/instagram.svg";
 
 const Navcon = () => {
-  const iconClass = `block fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400 transition duration-300 ease-in-out transform 
+  const iconClass = `block fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400 transform 
   hover:-translate-y-0.5 focus-visible:-translate-y-0.5 hover:scale-105 focus-visible:scale-105`;
 
   return (

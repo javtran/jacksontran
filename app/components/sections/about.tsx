@@ -6,7 +6,7 @@ import Email from "../../../public/email.svg";
 import SectionHeader from "../sectionheader";
 
 const About = () => {
-  const iconClass = `block fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400 transition duration-300 ease-in-out transform`;
+  const iconClass = `block fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400 transform`;
   return (
     <header
       id="about"
@@ -16,7 +16,7 @@ const About = () => {
         <Image
           src="selfportrait.jpg"
           alt="portrait of Jackson"
-          className="rounded-full max-sm:w-0 max-sm:h-0 grayscale hover:grayscale-0 hover:outline-4 hover:outline-offset-8 hover:outline-sky-400 outline-none transition-all ease-in-out duration-300"
+          className="rounded-full max-sm:w-0 max-sm:h-0 grayscale hover:grayscale-0 hover:outline-4 hover:outline-offset-8 hover:outline-sky-400 outline-none animation"
           width={300}
           height={300}
         />

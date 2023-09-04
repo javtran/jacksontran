@@ -16,7 +16,7 @@ const About = () => {
         <Image
           src="selfportrait.jpg"
           alt="portrait of Jackson"
-          className="rounded-full max-sm:w-0 max-sm:h-0 grayscale hover:grayscale-0 hover:outline-4 hover:outline-offset-8 hover:outline-sky-400 outline-none transition-all ease-in-out duration-300 "
+          className="rounded-full max-sm:w-0 max-sm:h-0 grayscale hover:grayscale-0 hover:outline-4 hover:outline-offset-8 hover:outline-sky-400 outline-none transition-all ease-in-out duration-300"
           width={300}
           height={300}
         />

@@ -30,7 +30,7 @@ const SectionListItem = (prop: any) => {
         <div
           className={
             "relative sm:col-span-6 max-sm:order-last " +
-            `${prop.index % 2 && "sm:order-last"}`
+            `${prop.index % 2 && "sm:order-last "}`
           }
         >
           <Image
@@ -38,6 +38,7 @@ const SectionListItem = (prop: any) => {
             alt={prop.image_alt}
             width={500}
             height={300}
+            className="h-72 object-cover object-center"
           />
         </div>
       )}

@@ -49,7 +49,7 @@ const Navbar = () => {
     <nav
       id="navbar"
       className="fixed nav w-full flex justify-between items-center z-10 animate"
-      style={{ backdropFilter: "blur(8px)" }}
+      style={{ backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
     >
       <a
         href="/jacksontran"

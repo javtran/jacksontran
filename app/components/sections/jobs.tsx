@@ -48,7 +48,7 @@ const Jobs = () => {
       url: "https://www.chargepoint.com/",
       role: "Software Engineer Intern",
       start_date: "Feb",
-      end_date: "Mar 2023",
+      end_date: "June 2023",
       description: `Worked with the test engineer team in designing and implementing new internal testing features and methods for their electrical vehicle chargers. 
         Collaborated with other interns to architect an automation infrastructure, effectively relacing highly manual tasks and enabling easier scalability.`,
       skills: ["Python", "Jenkins"],

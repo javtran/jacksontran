@@ -4,6 +4,9 @@ import SFReadyMeal from "../../../public/sfreadymeal.png";
 import SpotiFile from "../../../public/spotifile.png";
 import CovidPass from "../../../public/covidpass.png";
 import Housemates from "../../../public/housemates.png";
+import Gratitude from "../../../public/gratitude.png";
+import Annota from "../../../public/annota.png";
+import BlackJak from "../../../public/blackjak.png";
 
 const Projects = () => {
   const data = [
@@ -34,7 +37,31 @@ const Projects = () => {
         "Spotify API",
       ],
       image: SpotiFile,
-      image_alt: "image alternative text",
+      image_alt: "screenshot of Spoti-File",
+    },
+    {
+      title: "Gratitude",
+      url: "https://gratitude.soe.ucsc.edu/",
+      description: `A platform that allows users to easily and efficiently share praise for others to help cultivate the habit of expressing gratitude within communities.`,
+      skills: ["Angular", "TypeScript", "SCSS", "Firebase"],
+      image: Gratitude,
+      image_alt: "screenshot of Gratitude platform",
+    },
+    {
+      title: "Annota",
+      url: "https://annota.soe.ucsc.edu/#/",
+      description: `A platform to learn, understand, and perform the qualitative research process through collaborative hands-on experience.`,
+      skills: ["Angular", "TypeScript", "SCSS", "Firebase"],
+      image: Annota,
+      image_alt: "screenshot of Annota",
+    },
+    {
+      title: "BlackJak",
+      url: "https://github.com/javtran/black-jak",
+      description: `A classic casino game "Black Jack"`,
+      skills: ["Gatsby", "React", "Styled Components", "Framer"],
+      image: BlackJak,
+      image_alt: "screenshot of Annota",
     },
     {
       title: "CovidPass",
@@ -43,7 +70,7 @@ const Projects = () => {
       Each location is assigned a unique QR code, and the app user scans the QR code to log their presence a tthat particular place.`,
       skills: ["iOS", "Swift"],
       image: CovidPass,
-      image_alt: "image alternative text",
+      image_alt: "screenshot of CovidPass",
     },
     {
       title: "Housemates",
@@ -57,7 +84,7 @@ const Projects = () => {
       ],
       skills: ["iOS", "Swift", "Flask", "Python", "MySQL"],
       image: Housemates,
-      image_alt: "image alternative text",
+      image_alt: "screenshot of Housemates",
     },
   ];
   return (

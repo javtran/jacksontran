@@ -20,7 +20,11 @@ import Image from "next/image";
  */
 const SectionListItem = (prop: any) => {
   return (
-    <div className="grid sm:grid-cols-12 gap-4 mb-12">
+    <a
+      href={prop.url}
+      target="_blank"
+      className="group grid sm:grid-cols-12 gap-4 p-8 hover:bg-black/20 rounded"
+    >
       {prop.start_date && prop.end_date && (
         <p className="text-sm uppercase font-semibold text-slate-500 sm:col-span-2 tracking-wide mt-1 mb-2">
           {prop.start_date} — {prop.end_date}
@@ -47,7 +51,7 @@ const SectionListItem = (prop: any) => {
         <a
           href={prop.url}
           target="_blank"
-          className="text-lg font-medium text-slate-200 hover:text-sky-400 focus-visible:text-sky-400"
+          className="text-lg font-medium text-slate-200 group-hover:text-sky-400 focus-visible:text-sky-400"
         >
           {prop.title && <span>{prop.title}</span>}
           {prop.role && (
@@ -90,7 +94,7 @@ const SectionListItem = (prop: any) => {
         )}
         <ul className="mt-2 flex flex-wrap"></ul>
       </div>
-    </div>
+    </a>
   );
 };
 export default SectionListItem;

@@ -57,7 +57,13 @@ const Projects = () => {
     },
     {
       title: "BlackJak",
-      url: "https://github.com/javtran/black-jak",
+      url: "https://javtran.github.io/black-jak/",
+      links: [
+        {
+          title: "GitHub",
+          url: "https://github.com/javtran/black-jak",
+        },
+      ],
       description: `A classic casino game "Black Jack"`,
       skills: ["Gatsby", "React", "Styled Components", "Framer"],
       image: BlackJak,

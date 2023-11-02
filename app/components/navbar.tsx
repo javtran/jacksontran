@@ -82,6 +82,7 @@ const Navbar = () => {
         <li>
           <Link
             href="/jackson_tran_resume.pdf"
+            target="_blank"
             className="max-sm:text-sm p-2 rounded text-white border-white hover:border-sky-400 border hover:text-sky-400"
             locale={false}
           >

@@ -1,7 +1,7 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-export default function InViewWrapper({ children }) {
+export default function InViewWrapper({ children }: any) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 

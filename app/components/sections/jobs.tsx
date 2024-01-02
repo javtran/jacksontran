@@ -7,7 +7,7 @@ const Jobs = () => {
 	return (
 		<div
 			id="experience"
-			className="pt-16 sm:min-h-screen flex flex-col md:justify-center"
+			className="pt-24 sm:min-h-screen flex flex-col md:justify-center"
 		>
 			<InViewWrapper>
 				<SectionHeader index={2} title="Experience"></SectionHeader>

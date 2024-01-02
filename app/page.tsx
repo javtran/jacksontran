@@ -45,7 +45,7 @@ export default function Home() {
 					<Navbar />
 				</motion.li>
 				<motion.li variants={item}>
-					<div className="mx-auto min-h-screen max-w-screen-xl selection:bg-sky-400 selection:text-sky-900 px-8 max-sm:pt-20 md:px-16 lg:px-28">
+					<div className="mx-auto min-h-screen max-w-screen-xl selection:bg-sky-400 selection:text-sky-900 px-8 md:px-16 lg:px-28">
 						<About />
 						<Jobs />
 						<Projects />

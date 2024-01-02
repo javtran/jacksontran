@@ -7,7 +7,7 @@ const Projects = () => {
 	return (
 		<div
 			id="projects"
-			className="pt-16 sm:min-h-screen flex flex-col md:justify-center"
+			className="pt-24 sm:min-h-screen flex flex-col md:justify-center"
 		>
 			<InViewWrapper>
 				<SectionHeader index={3} title="Projects"></SectionHeader>

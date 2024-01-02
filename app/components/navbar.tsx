@@ -29,16 +29,22 @@ const Navbar = () => {
 	return (
 		<nav
 			id="navbar"
-			className="fixed nav w-full flex justify-between items-center z-10 animate"
+			className="fixed nav w-full flex justify-between items-center z-10"
 			style={{ backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
 		>
-			<a
+			<motion.a
 				href="/jacksontran"
-				className="stroke-slate-200 stroke-[30px] ml-5 md:ml-10 hover:stroke-sky-400 hover:motion-safe:animate-spin"
+				className="stroke-slate-200 stroke-[30px] ml-5 md:ml-10 hover:stroke-sky-400 transition-none"
 				style={{ strokeLinecap: "round" }}
+				whileHover={{ scale: 1.2, rotate: 360, transition: { duration: 0.3 } }}
+				whileTap={{
+					scale: 0.8,
+					rotate: 180,
+					borderRadius: "100%",
+				}}
 			>
 				<Logo className="stroke-inherit max-md:w-8" />
-			</a>
+			</motion.a>
 			<motion.ul
 				variants={container}
 				className="max-sm:grow flex justify-around sm:gap-8 p-5 md:px-10 md:py-8 rounded-b-lg"

@@ -48,9 +48,7 @@ const SectionListItem = (prop: any) => {
       )}
 
       <div className={prop.image ? "sm:col-span-6" : "sm:col-span-10"}>
-        <a
-          href={prop.url}
-          target="_blank"
+        <div
           className="text-lg font-medium text-slate-200 group-hover:text-sky-400 focus-visible:text-sky-400"
         >
           {prop.title && <span>{prop.title}</span>}
@@ -59,21 +57,20 @@ const SectionListItem = (prop: any) => {
               {prop.role} · {prop.company}
             </span>
           )}
-        </a>
+        </div>
         <p className="mt-2">{prop.description}</p>
         {prop.links && (
           <ul className="mt-2 flex flex-wrap">
             {prop.links.map((link: any, i: number) => {
               return (
                 <li key={i} className="mr-4 mt-2">
-                  <a
-                    href={link.url}
-                    target="_blank"
+                  <div
+                    onClick={() => {window.open(link.url);}}
                     className="text-sm inline-flex items-center font-medium text-slate-300 hover:text-sky-400 focus-visible:text-sky-400 fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400"
                   >
                     <Link className="fill-inherit mr-1" />
                     <span>{link.title}</span>
-                  </a>
+                  </div>
                 </li>
               );
             })}

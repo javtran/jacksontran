@@ -1,10 +1,19 @@
+"use client"; // This is a client component
 import About from "./components/sections/about";
 import Navbar from "./components/navbar";
 import Navcon from "./components/navcon";
 import Jobs from "./components/sections/jobs";
 import Projects from "./components/sections/projects";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  },[]);
+
+  if (!mounted) return <div></div>;
   return (
     <div>
       <div className="background fixed w-screen h-screen"></div>

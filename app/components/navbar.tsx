@@ -4,47 +4,10 @@ import Logo from "../../public/logo.svg";
 import React, { useEffect, useCallback, useState } from "react";
 
 const Navbar = () => {
-  // const [y, setY] = useState(window.scrollY);
-  // const [visible, setVisible] = useState(true);
-  // // https://codesandbox.io/s/detect-scroll-direction-with-memoization-lhwnd?file=/src/App.js
-  // const handleNavigation = useCallback(
-  //   (e: any) => {
-  //     const window = e.currentTarget;
-  //     if (y > window.scrollY) {
-  //       console.log("scrolling up");
-  //       if (!visible) {
-  //         const navbar = document.getElementById("navbar");
-  //         if (navbar) {
-  //           navbar.style.height = "0";
-  //         }
-  //       }
-  //       setVisible(true);
-  //     } else if (y < window.scrollY) {
-  //       console.log("scrolling down");
-  //       if (visible) {
-  //         const navbar = document.getElementById("navbar");
-  //         if (navbar) {
-  //           navbar.style.height = "80px";
-  //         }
-  //       }
-  //       setVisible(false);
-  //     }
-  //     setY(window.scrollY);
-  //   },
-  //   [y]
-  // );
-
-  // useEffect(() => {
-  //   setY(window.scrollY);
-  //   window.addEventListener("scroll", handleNavigation);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleNavigation);
-  //   };
-  // }, [handleNavigation]);
+  
 
   const tabClasses =
-    "max-sm:text-sm text-slate-200 hover:text-sky-400 focus-visible:text-sky-400 hover:outline focus-visible:outline hover:outline-offset-8 focus-visible:outline-offset-8 hover:outline-dashed focus-visible:outline-dashed";
+    "max-sm:text-sm text-slate-200 hover:text-sky-400 focus-visible:text-sky-400";
   return (
     <nav
       id="navbar"

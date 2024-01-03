@@ -56,7 +56,7 @@ const SectionListItem = (prop: any) => {
 						</span>
 					)}
 				</div>
-				<p className="mt-2">{prop.description}</p>
+				<p className="mt-2 text-slate-400	">{prop.description}</p>
 				{prop.links && (
 					<ul className="mt-2 flex flex-wrap">
 						{prop.links.map((link: any, i: number) => {

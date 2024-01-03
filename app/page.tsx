@@ -7,8 +7,9 @@ import Navcon from "./components/navcon";
 import NavEmail from "./components/navemail";
 import Jobs from "./components/sections/jobs";
 import Projects from "./components/sections/projects";
+import Footer from "./components/sections/footer";
 
-export default function Home() {
+export default function Page() {
 	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => {
@@ -49,12 +50,11 @@ export default function Home() {
 						<About />
 						<Jobs />
 						<Projects />
+						<Footer />
 					</div>
 				</motion.li>
 				<motion.li>
 					<Navcon />
-				</motion.li>
-				<motion.li>
 					<NavEmail />
 				</motion.li>
 			</motion.ul>

@@ -27,7 +27,7 @@ const About = () => {
 					<h2 className="text-lg font-medium text-slate-200 tracking-tight mt-4 sm:text-xl">
 						Ex SWE Intern at ChargePoint
 					</h2>
-					<p className="max-w-xs mt-4 leading-normal">
+					<p className="max-w-xs mt-4 leading-normal text-slate-400">
 						I build digital experiences for software users.
 					</p>
 					<ul className="flex gap-2 items-center mt-4 lg:hidden">
@@ -72,7 +72,7 @@ const About = () => {
 			</div>
 			<div className="sm:pt-4 lg:w-1/2 lg:py-24 max-sm:mt-16">
 				<SectionHeader index={1} title="About"></SectionHeader>
-				<p className="mb-4">
+				<p className="mb-4 text-slate-400">
 					Back in high school, I tried at making a prank web page to play a joke
 					on my friends for April Fools, and got myself into the world of coding
 					and web development. Jumping ahead to today, I hold a computer science
@@ -102,7 +102,7 @@ const About = () => {
 					</a>{" "}
 					in my city.
 				</p>
-				<p className="mb-4">
+				<p className="mb-4 text-slate-400">
 					I am currently seeking a role within the software engineering
 					industry, focusing on{" "}
 					<span className="font-medium text-slate-200">
@@ -111,7 +111,7 @@ const About = () => {
 					. In my free time, I am continuing my engineering knowledge on the web
 					and venturing into iOS and Android mobile development.
 				</p>
-				<p className="mb-4">
+				<p className="mb-4 text-slate-400">
 					When I’m not at my computer, I usually prance around, dancing to{" "}
 					<a
 						href="https://www.youtube.com/watch?v=3TpMZja_zfQ"

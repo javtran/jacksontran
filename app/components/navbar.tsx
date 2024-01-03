@@ -33,7 +33,7 @@ const Navbar = () => {
 			style={{ backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
 		>
 			<motion.a
-				href="/jacksontran"
+				href="/"
 				className="stroke-slate-200 stroke-[30px] ml-5 md:ml-10 hover:stroke-sky-400 transition-none"
 				style={{ strokeLinecap: "round" }}
 				whileHover={{ scale: 1.2, rotate: 360, transition: { duration: 0.3 } }}

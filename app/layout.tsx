@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "Jackson Tran",
   description:
     "Jackson Tran is a software engineer who specializes in building digital experiences.",
+  applicationName: "jacksontran",
+  keywords: ["Jackson Tran", "Jackson", "Software Engineer", "Portfolio"],
+  authors: {
+    name: "Jackson Tran",
+  },
 };
 
 export default function RootLayout({

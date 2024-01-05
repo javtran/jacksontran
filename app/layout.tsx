@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   authors: {
     name: "Jackson Tran",
   },
+  verification: {
+    google: "HFUfvNxErZSrnieImh-6tHVMs5C3wx3kjaGCA17miFM",
+  },
 };
 
 export default function RootLayout({

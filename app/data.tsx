@@ -61,7 +61,7 @@ const jobs = [
   {
     company: "Tech4Good Lab",
     url: "https://tech4good.soe.ucsc.edu/#/",
-    role: "Research and Developer Intern",
+    role: "Lead Software Developer",
     start_date: "Mar 2022",
     end_date: "Aug 2023",
     description: `Delivered high-quality, robust production code for diverse array of social computing 

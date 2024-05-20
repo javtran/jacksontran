@@ -1,11 +1,12 @@
-import SFReadyMeal from "../public/sfreadymeal.png";
-import SpotiFile from "../public/spotifile.png";
-import CovidPass from "../public/covidpass.png";
-import Housemates from "../public/housemates.png";
-import Gratitude from "../public/gratitude.png";
-import Annota from "../public/annota.png";
-import BlackJak from "../public/blackjak.png";
-import SupportSFUSD from "../public/supportsfusd.png";
+import SFReadyMeal from "../public/projects/sfreadymeal.png";
+import SpotiFile from "../public/projects/spotifile.png";
+import CovidPass from "../public/projects/covidpass.png";
+import Housemates from "../public/projects/housemates.png";
+import Gratitude from "../public/projects/gratitude.png";
+import Annota from "../public/projects/annota.png";
+import BlackJak from "../public/projects/blackjak.png";
+import SupportSFUSD from "../public/projects/supportsfusd.png";
+import DynamicSurveys from "../public/projects/dynamicsurveys.png";
 
 const jobs = [
   {
@@ -19,16 +20,16 @@ const jobs = [
 		social problems building creative technology through close collaborations with other developers, designers, data geeks, and citizen activists`,
     links: [
       {
-        title: "SF Life Line",
-        url: "https://github.com/sfbrigade/sf-lifeline",
-      },
-      {
         title: "Support SFUSD",
         url: "https://support-sfusd.vercel.app/",
       },
       {
         title: "SF Ready Meals",
         url: "https://github.com/dev-mission/fellowship2022-meals",
+      },
+      {
+        title: "SF Life Line",
+        url: "https://github.com/sfbrigade/sf-lifeline",
       },
     ],
     skills: [
@@ -70,12 +71,16 @@ const jobs = [
 		complex research web application.`,
     links: [
       {
-        title: "Annota",
-        url: "https://annota.soe.ucsc.edu/",
-      },
-      {
         title: "Gratitude",
         url: "https://gratitude.soe.ucsc.edu/",
+      },
+      {
+        title: "Dynamic Surveys",
+        url: "https://dynamic-surveys-dev-72d43.web.app/",
+      },
+      {
+        title: "Annota",
+        url: "https://annota.soe.ucsc.edu/",
       },
     ],
     skills: ["Angular", "NgRx", "TypeScript", "SCSS", "Firebase"],
@@ -132,12 +137,12 @@ const projects = [
     image_alt: "screenshot of SF Ready Meals",
   },
   {
-    title: "Spoti-File",
-    url: "https://github.com/javtran/spoti-file",
-    description: `Web app for visualizing personalized Spotify data. View detailed audio information about the tracks you listen to.`,
-    skills: ["Next.js", "Tailwind CSS", "Express.js", "Vercel", "Spotify API"],
-    image: SpotiFile,
-    image_alt: "screenshot of Spoti-File",
+    title: "Dynamic Surveys",
+    url: "https://dynamic-surveys-dev-72d43.web.app/",
+    description: `A data collection platform that provides qualitative and quantitative data through clusters build on responses to open-ended questions`,
+    skills: ["Angular", "TypeScript", "SCSS", "Firebase"],
+    image: DynamicSurveys,
+    image_alt: "screenshot of Dynamic Surveys platform",
   },
   {
     title: "Gratitude",
@@ -150,10 +155,18 @@ const projects = [
   {
     title: "Annota",
     url: "https://annota.soe.ucsc.edu/#/",
-    description: `A platform to learn, understand, and perform the qualitative research process through collaborative hands-on experience.`,
+    description: `A teaching tool for educators to help students learn qualitative analyis`,
     skills: ["Angular", "TypeScript", "SCSS", "Firebase"],
     image: Annota,
     image_alt: "screenshot of Annota",
+  },
+  {
+    title: "Spoti-File",
+    url: "https://github.com/javtran/spoti-file",
+    description: `Web app for visualizing personalized Spotify data. View detailed audio information about the tracks you listen to.`,
+    skills: ["Next.js", "Tailwind CSS", "Express.js", "Vercel", "Spotify API"],
+    image: SpotiFile,
+    image_alt: "screenshot of Spoti-File",
   },
   {
     title: "BlackJak",

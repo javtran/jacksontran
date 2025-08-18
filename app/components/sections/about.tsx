@@ -106,7 +106,7 @@ const About = () => {
         <p className="mb-4 text-slate-400">
           My journey into software engineering started with a high school prank
           and has since grown into a passion for building impactful solutions. I hold
-          a bachelor's degree in computer science and have developed software for diverse
+          a bachelor&apos;s degree in computer science and have developed software for diverse
           organizations, including
           {" "}
           <a
@@ -124,7 +124,7 @@ const About = () => {
           >
             electrical vehicle infrastructure company
           </a>
-          , and my city's{" "}
+          , and my city&apos;s{" "}
           <a
             href="https://www.sfhsa.org/"
             target="_blank"
@@ -138,7 +138,7 @@ const About = () => {
           <span className="font-medium text-slate-200">
             M.S. in Computer Science at Georgia Institute of Technology
           </span>,
-           where I'm expanding my knowledge in artificial intelligence and machine learning.
+           where I&apos;m expanding my knowledge in artificial intelligence and machine learning.
            I am actively seeking a{" "}
            <span className="font-medium text-slate-200">
             Software Engineering internship

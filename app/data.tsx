@@ -24,7 +24,7 @@ const jobs = [
         url: "https://support-sfusd.vercel.app/",
       },
       {
-        title: "SF Ready Meals",
+        title: "SF Community Meals",
         url: "https://github.com/dev-mission/fellowship2022-meals",
       },
       {
@@ -122,10 +122,10 @@ const projects = [
     image_alt: "screenshot of Suport SFUSD",
   },
   {
-    title: "SF Ready Meals",
-    url: "https://sfreadymeals.herokuapp.com/",
+    title: "SFHSA Community Meals (SF Ready Meals)",
+    url: "https://www.sfhsa.org/services/disability-aging/groceries-meals/community-meals",
     description: `Resource platform that offers detailed information and locations of organizations 
-    providing free hot meals to eligible citizens through the SFHSA Congregate Meals Program`,
+    providing free hot meals to eligible citizens through the SFHSA Community Meals Program`,
     links: [
       {
         title: "GitHub",

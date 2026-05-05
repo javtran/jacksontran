@@ -148,7 +148,7 @@ const About = () => {
           When I need a break from the screen, you can find me on the dance floor—
           I am now a dancer represented by {" "}
           <a
-            href="https://www.raeagency.com/dancers/jackson-tran/"
+            href="https://www.raeagency.com/dancers/all/2820293/jackson-tran"
             target="_blank"
             className="font-medium text-slate-200 hover:text-sky-400 focus-visible:text-sky-400"
           >

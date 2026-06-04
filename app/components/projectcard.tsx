@@ -37,7 +37,7 @@ const ProjectCard = ({
             src={image}
             alt={image_alt ?? ""}
             fill
-            className={`object-cover transition-transform duration-500 group-hover:scale-105 ${image_position}`}
+            className={`object-cover ${image_position}`}
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-slate-600 text-sm">

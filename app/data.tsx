@@ -179,11 +179,18 @@ const projects = [
   },
   {
     title: "Spoti-File",
-    url: "https://github.com/javtran/spoti-file",
-    description: `Web app for visualizing personalized Spotify data. View detailed audio information about the tracks you listen to.`,
+    url: "https://spoti-file.vercel.app/",
+    description: `Web app for visualizing your Spotify listening habits. View your top tracks, artist insights, 30s previews, and album info.`,
+    links: [
+      {
+        title: "GitHub",
+        url: "https://github.com/javtran/spoti-file",
+      },
+    ],
     skills: ["Next.js", "Tailwind CSS", "Express.js", "Vercel", "Spotify API"],
     image: SpotiFile,
     image_alt: "screenshot of Spoti-File",
+    image_position: "object-center",
   },
   {
     title: "BlackJak",

@@ -2,12 +2,18 @@
 import Link from "next/link";
 import Logo from "../../public/icons/logo.svg";
 import { motion } from "framer-motion";
+import { useActiveSection } from "../hooks/useActiveSection";
 
 const Navbar = () => {
-  const tabClasses =
-    "max-sm:text-sm text-slate-200 hover:text-sky-400 focus-visible:text-sky-400";
+  const active = useActiveSection();
 
-  // framer variants settings
+  const tabClasses = (section: string) =>
+    `max-sm:text-sm transition-colors duration-200 ${
+      active === section
+        ? "text-sky-400"
+        : "text-slate-200 hover:text-sky-400 focus-visible:text-sky-400"
+    }`;
+
   const container = {
     hidden: { opacity: 1 },
     visible: {
@@ -50,25 +56,20 @@ const Navbar = () => {
         className="max-sm:grow flex justify-around sm:gap-8 p-5 md:px-10 md:py-8 rounded-b-lg"
       >
         <motion.li variants={item}>
-          <a href="#about" className={tabClasses}>
+          <a href="#about" className={tabClasses("about")}>
             <span className="text-sky-400 max-sm:hidden">1.</span> About
           </a>
         </motion.li>
         <motion.li variants={item}>
-          <a href="#experience" className={tabClasses}>
+          <a href="#experience" className={tabClasses("experience")}>
             <span className="text-sky-400 max-sm:hidden">2.</span> Experience
           </a>
         </motion.li>
         <motion.li variants={item}>
-          <a href="#projects" className={tabClasses}>
+          <a href="#projects" className={tabClasses("projects")}>
             <span className="text-sky-400 max-sm:hidden">3.</span> Projects
           </a>
         </motion.li>
-        {/* <li>
-          <a className={tabClasses}>
-            <span className="text-sky-400">4.</span> Contact
-          </a>
-        </li> */}
         <motion.li variants={item}>
           <Link
             href="/jackson_tran_resume.pdf"

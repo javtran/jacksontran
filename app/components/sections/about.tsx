@@ -54,6 +54,13 @@ const About = () => {
           <h2 className="text-lg font-medium text-slate-200 tracking-tight mt-4 sm:text-xl">
             Ex SWE Intern at ChargePoint
           </h2>
+          <div className="flex items-center gap-2 mt-3">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-sky-400"></span>
+            </span>
+            <span className="text-sm text-sky-400 font-medium">Open to internships</span>
+          </div>
           <p className="max-w-xs mt-4 leading-normal text-slate-400">
             I build digital experiences for software users.
           </p>

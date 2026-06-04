@@ -2,7 +2,6 @@ import SectionHeader from "../sectionheader";
 import SectionListItem from "../sectionlistitem";
 import { jobs as data } from "../../data";
 import InViewWrapper from "../inviewwrapper";
-
 const Jobs = () => {
 	return (
 		<div

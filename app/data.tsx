@@ -1,3 +1,4 @@
+import EventBooking from "../public/projects/eventbooking.png";
 import SFReadyMeal from "../public/projects/sfreadymeal.png";
 import SpotiFile from "../public/projects/spotifile.png";
 import CovidPass from "../public/projects/covidpass.png";
@@ -89,7 +90,7 @@ const jobs = [
     company: "ChargePoint",
     url: "https://www.chargepoint.com/",
     role: "Software Engineer Intern",
-    start_date: "Feb",
+    start_date: "Feb 2023",
     end_date: "Jun 2023",
     description: `Worked with the test engineer team in designing and implementing new internal testing features and methods for their electrical vehicle chargers. 
 		Collaborated with other interns to architect an automation infrastructure, effectively relacing highly manual tasks and enabling easier scalability.`,
@@ -107,6 +108,21 @@ const jobs = [
 ];
 
 const projects = [
+  {
+    title: "EventBooking",
+    url: "https://event-booking-five-steel.vercel.app/",
+    description: `A full-stack event platform for browsing, hosting, and RSVPing to events. Features waitlist management, email notifications, and a personal dashboard.`,
+    links: [
+      {
+        title: "GitHub",
+        url: "https://github.com/javtran/EventBooking",
+      },
+    ],
+    skills: ["Next.js", "Prisma", "NextAuth", "Resend", "Tailwind CSS", "PostgreSQL"],
+    image: EventBooking,
+    image_alt: "screenshot of EventBooking",
+    image_position: "object-top",
+  },
   {
     title: "Support SFUSD",
     url: "https://support-sfusd.vercel.app/",
@@ -143,6 +159,7 @@ const projects = [
     skills: ["Angular", "TypeScript", "SCSS", "Firebase"],
     image: DynamicSurveys,
     image_alt: "screenshot of Dynamic Surveys platform",
+    image_position: "object-center",
   },
   {
     title: "Gratitude",
@@ -181,6 +198,7 @@ const projects = [
     skills: ["Gatsby", "React", "Styled Components", "Framer"],
     image: BlackJak,
     image_alt: "screenshot of Annota",
+    image_position: "object-center",
   },
   {
     title: "CovidPass",
@@ -190,6 +208,7 @@ const projects = [
     skills: ["iOS", "Swift"],
     image: CovidPass,
     image_alt: "screenshot of CovidPass",
+    image_position: "object-center",
   },
   {
     title: "Housemates",
@@ -204,6 +223,7 @@ const projects = [
     skills: ["iOS", "Swift", "Flask", "Python", "MySQL"],
     image: Housemates,
     image_alt: "screenshot of Housemates",
+    image_position: "object-center",
   },
 ];
 

@@ -8,6 +8,7 @@ import NavEmail from "./components/navemail";
 import Jobs from "./components/sections/jobs";
 import Projects from "./components/sections/projects";
 import Footer from "./components/sections/footer";
+import ScrollProgress from "./components/scrollprogress";
 
 export default function Page() {
 	const [mounted, setMounted] = useState(false);
@@ -40,6 +41,7 @@ export default function Page() {
 
 	return (
 		<main>
+			<ScrollProgress />
 			<div className="background fixed w-screen h-screen"></div>
 			<motion.ul variants={container} initial="hidden" animate="visible">
 				<motion.li variants={item}>

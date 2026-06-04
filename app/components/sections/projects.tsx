@@ -1,5 +1,5 @@
 import SectionHeader from "../sectionheader";
-import SectionListItem from "../sectionlistitem";
+import ProjectCard from "../projectcard";
 import { projects as data } from "../../data";
 import InViewWrapper from "../inviewwrapper";
 
@@ -10,15 +10,14 @@ const Projects = () => {
 			className="pt-24 sm:min-h-screen flex flex-col md:justify-center"
 		>
 			<InViewWrapper>
-				<SectionHeader index={3} title="Projects"></SectionHeader>
-				{data &&
-					data.map((data, i) => {
-						return (
-							<InViewWrapper key={i}>
-								<SectionListItem {...{ index: i, ...data }}> </SectionListItem>
-							</InViewWrapper>
-						);
-					})}
+				<SectionHeader index={3} title="Projects" />
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+					{data.map((project, i) => (
+						<InViewWrapper key={i}>
+							<ProjectCard {...project} />
+						</InViewWrapper>
+					))}
+				</div>
 			</InViewWrapper>
 		</div>
 	);

@@ -1,24 +1,24 @@
 import Link from "../../public/icons/link.svg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-/**
- *
- * @param prop
- *      title: title of project
- *      role: role of job
- *      company: role of company
- *      description: description of role/project
- *      url: main url intended for this role/project
- *      links: other relevant sub links
- *      skills: skills used for this role/project
- *      image: image url of project
- *      image_alt: alternative text for image
- *      start_date: start date of job
- *      end_date: end date of job
- *      index: index of item
- * @returns
- */
-const SectionListItem = (prop: any) => {
+type SectionLink = { title: string; url: string };
+
+type SectionListItemProps = {
+  title?: string;
+  role?: string;
+  company?: string;
+  description?: string;
+  url?: string;
+  links?: SectionLink[];
+  skills?: string[];
+  image?: StaticImageData;
+  image_alt?: string;
+  start_date?: string;
+  end_date?: string;
+  index?: number;
+};
+
+const SectionListItem = (prop: SectionListItemProps) => {
   return (
     <a
       href={prop.url}
@@ -34,12 +34,12 @@ const SectionListItem = (prop: any) => {
         <div
           className={
             "relative sm:col-span-6 max-sm:order-last " +
-            `${prop.index % 2 && "sm:order-last "}`
+            `${prop.index !== undefined && prop.index % 2 && "sm:order-last "}`
           }
         >
           <Image
             src={prop.image}
-            alt={prop.image_alt}
+            alt={prop.image_alt ?? ""}
             width={500}
             height={300}
             className="h-72 object-cover object-center"
@@ -56,21 +56,21 @@ const SectionListItem = (prop: any) => {
             </span>
           )}
         </div>
-        <p className="mt-2 text-slate-400	">{prop.description}</p>
+        <p className="mt-2 text-slate-400">{prop.description}</p>
         {prop.links && (
           <ul className="mt-2 flex flex-wrap">
-            {prop.links.map((link: any, i: number) => {
+            {prop.links.map((link, i) => {
               return (
                 <li key={i} className="mr-4 mt-2">
-                  <div
-                    onClick={() => {
-                      window.open(link.url);
-                    }}
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    onClick={(e) => e.stopPropagation()}
                     className="text-sm inline-flex items-center font-medium text-slate-300 hover:text-sky-400 focus-visible:text-sky-400 fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400"
                   >
                     <Link className="fill-inherit mr-1" />
                     <span>{link.title}</span>
-                  </div>
+                  </a>
                 </li>
               );
             })}
@@ -78,7 +78,7 @@ const SectionListItem = (prop: any) => {
         )}
         {prop.skills && (
           <ul className="mt-2 flex flex-wrap">
-            {prop.skills.map((skill: any, i: number) => {
+            {prop.skills.map((skill, i) => {
               return (
                 <li key={i} className="mr-2 mt-2">
                   <span className="bg-sky-400/20 px-4 py-1 rounded-full text-sky-400 font-medium text-sm">
@@ -89,7 +89,6 @@ const SectionListItem = (prop: any) => {
             })}
           </ul>
         )}
-        <ul className="mt-2 flex flex-wrap"></ul>
       </div>
     </a>
   );

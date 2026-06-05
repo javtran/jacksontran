@@ -1,4 +1,3 @@
-import Link from "../../public/icons/link.svg";
 import Image, { StaticImageData } from "next/image";
 
 type SectionLink = { title: string; url: string };
@@ -66,10 +65,9 @@ const SectionListItem = (prop: SectionListItemProps) => {
                     href={link.url}
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
-                    className="text-sm inline-flex items-center font-medium text-slate-300 hover:text-sky-400 focus-visible:text-sky-400 fill-slate-200 hover:fill-sky-400 focus-visible:fill-sky-400"
+                    className="text-sm font-medium text-slate-400 hover:text-sky-400 focus-visible:text-sky-400 transition-colors duration-200"
                   >
-                    <Link className="fill-inherit mr-1" />
-                    <span>{link.title}</span>
+                    {link.title} ↗
                   </a>
                 </li>
               );

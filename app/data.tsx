@@ -1,4 +1,4 @@
-import EventBooking from "../public/projects/eventbooking.png";
+import RSVPful from "../public/projects/rsvpful.png";
 import SFReadyMeal from "../public/projects/sfreadymeal.png";
 import SpotiFile from "../public/projects/spotifile.png";
 import CovidPass from "../public/projects/covidpass.png";
@@ -109,18 +109,18 @@ const jobs = [
 
 const projects = [
   {
-    title: "EventBooking",
-    url: "https://event-booking-five-steel.vercel.app/",
+    title: "RSVP-ful",
+    url: "https://rsvp-ful.vercel.app",
     description: `A full-stack event platform for browsing, hosting, and RSVPing to events. Features waitlist management, email notifications, and a personal dashboard.`,
     links: [
       {
         title: "GitHub",
-        url: "https://github.com/javtran/EventBooking",
+        url: "https://github.com/javtran/RSVP-ful",
       },
     ],
     skills: ["Next.js", "Prisma", "NextAuth", "Resend", "Tailwind CSS", "PostgreSQL"],
-    image: EventBooking,
-    image_alt: "screenshot of EventBooking",
+    image: RSVPful,
+    image_alt: "screenshot of RSVP-ful",
     image_position: "object-top",
   },
   {

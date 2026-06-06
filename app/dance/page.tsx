@@ -26,7 +26,6 @@ export default function DancePage() {
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         >
           <source src="/dance-bg.mp4" type="video/mp4" />
-          <source src="/dance-bg.mov" type="video/quicktime" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-transparent to-slate-950/80" />
       </div>

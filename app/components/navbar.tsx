@@ -72,6 +72,14 @@ const Navbar = () => {
         </motion.li>
         <motion.li variants={item}>
           <Link
+            href="/dance"
+            className="max-sm:text-sm text-slate-200 hover:text-sky-400 focus-visible:text-sky-400 transition-colors duration-200"
+          >
+            Dance
+          </Link>
+        </motion.li>
+        <motion.li variants={item}>
+          <Link
             href="/jackson_tran_resume.pdf"
             target="_blank"
             className="max-sm:text-sm p-2 rounded text-white border-white hover:border-sky-400 border hover:text-sky-400"

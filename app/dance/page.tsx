@@ -25,7 +25,7 @@ export default function DancePage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-20"
         >
-          <source src="/dance-bg.mp4" type="video/mp4" />
+          <source src="https://github.com/javtran/jacksontran/releases/download/dance-assets/dance-bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-transparent to-slate-950/80" />
       </div>

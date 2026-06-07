@@ -27,7 +27,7 @@ export const classesITeach: DanceVideo[] = [
   { title: "ITZY - THAT'S A NO NO", style: "K-Pop", url: "https://youtu.be/tOZjVnWEJVY"},
   { title: "JENNIE - Like Jennie", style: "K-Pop", url: "https://youtu.be/xaFTpzduowo"},
   { title: "CORTIS - GO!", style: "K-Pop", url: "https://youtu.be/iqIPGm3yrRs"}, 
-  { title: "Tame Impala, JENNIE - Dracula", url: "https://youtu.be/fAUSLduYNEQ?si=mgsnCjY38RyWcZE}
+  { title: "Tame Impala, JENNIE - Dracula", url: "https://youtu.be/fAUSLduYNEQ?si=mgsnCjY38RyWcZE"}
 ];
 
 // Video projects (short films, music videos, etc.)

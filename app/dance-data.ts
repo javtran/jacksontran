@@ -20,7 +20,7 @@ export const classesITeach: DanceVideo[] = [
   // Example:
   // { title: "Heels Choreography", style: "Heels", url: "https://www.youtube.com/watch?v=XXXXX", date: "2024" },
   // { title: "Ariana Grande - The Boy is Mine", style: "Jazz-Funk", url: "https://www.youtube.com/watch?v=hBdUI_KqcqA"},
-  // { title: "ILLIT - IT'S ME", style: "K-Pop", url: "https://www.youtube.com/watch?v=BQ-fK4CjQ0s"},
+  { title: "ILLIT - IT'S ME", style: "K-Pop", url: "https://youtu.be/YeVfHP4yEqs?si=vNyJIPjt_Whyvb8f"},
   { title: "Kellis - Milkshake", style: "Jazz-Funk", url: "https://youtu.be/bjhhIMEqN-k"},
   { title: "Ariana Grande - 7 Rings", style: "Jazz-Funk", url: "https://youtu.be/ehSgVz_NTVw"},
   { title: "Pink Pantheres, Zara Larsson - Stateside", style: " Jazz-Funk", url: "https://youtu.be/AOFuobax5xw"},

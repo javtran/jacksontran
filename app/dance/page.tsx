@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import VideoTabs from "../components/dance/videotabs";
 import ScrollProgress from "../components/scrollprogress";
+import { useFullHeight } from "../hooks/useFullHeight";
 
 const styles = ["Hip-Hop", "Jazz-Funk", "K-Pop", "Waacking", "Heels",];
 
 export default function DancePage() {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
+  const fullHeight = useFullHeight();
   if (!mounted) return null;
 
   return (
@@ -31,7 +33,7 @@ export default function DancePage() {
       </div>
 
       {/* Hero — full viewport */}
-      <section className="relative flex flex-col items-center justify-center text-center px-8 gap-6" style={{ minHeight: "100dvh" }}>
+      <section className="relative flex flex-col items-center justify-center text-center px-8 gap-6" style={{ minHeight: fullHeight || "100vh" }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

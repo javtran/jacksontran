@@ -31,7 +31,7 @@ export default function DancePage() {
       </div>
 
       {/* Hero — full viewport */}
-      <section className="relative flex flex-col items-center justify-center min-h-screen text-center px-8 gap-6">
+      <section className="relative flex flex-col items-center justify-center text-center px-8 gap-6" style={{ minHeight: "100dvh" }}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

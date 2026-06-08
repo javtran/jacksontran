@@ -29,7 +29,19 @@ export const classesITeach: DanceVideo[] = [
   { title: "CORTIS - GO!", style: "K-Pop", url: "https://youtu.be/iqIPGm3yrRs"}, 
   { title: "Tame Impala, JENNIE - Dracula", url: "https://youtu.be/fAUSLduYNEQ?si=mgsnCjY38RyWcZE"},
   { title: "FLO - Leak It", style: "Jazz-Funk", url: "https://youtu.be/WIbHzBgsZbI?si=K89Uv1o4G6_xW7Av"},
-  { title: "LISA - MONEY", style: "K-pop", url: "https://youtu.be/Bl5YxYGTKhU?si=aON_wjQ5N4y7vs3V"}
+  { title: "LISA - MONEY", style: "K-pop", url: "https://youtu.be/Bl5YxYGTKhU?si=aON_wjQ5N4y7vs3V"},
+  { title: "Tyla - Chanel", style: "Jazz-Funk", url: "https://youtu.be/HVIl5jlmI9I?si=Xj9YvAMgycTt07zW"},
+  { title: "aespa - Supernova", style: "Jazz-Funk", url: "https://youtu.be/L8gipxXsiKA?si=vcirzpvVdjhuxTV3" },
+  { title: "GIRLSET - Little Miss", style: "Jazz-Funk", url: "https://youtu.be/mhDASCfTmew?si=ZmnxXVW8Tu7d2Psn" },
+  { title: "Britney Spears - Toxic", style: "Jazz-Funk", url: "https://youtu.be/8a81GX9tnSY?si=jhzXNjEy8miTmt87" },
+  { title: "LISA - Rockstar", style: "Jazz-Funk", url: "https://youtu.be/8X-s7vWrQyQ?si=daMmmQqEYtDu-Kqa" },
+  { title: "Lady Gaga, Ariana Grande - Rain On Me", style: "Jazz-Funk", url: "https://youtu.be/RBn_VUTwC50?si=0vpJar_UkIv8BJM3" },
+  { title: "Britney Spears - Circus", style: "Jazz-Funk", url: "https://youtu.be/rgRweOpQrRw?si=vdMjbrKqocxcGtcC" },
+  { title: "Tate McRae - Greedy", style: "Jazz-Funk", url: "https://youtu.be/hhPh9pVFhAk?si=zDGybdGYaGKYu_02" },
+  { title: "Parris Goebel - BACKSTROKE", url: "https://youtu.be/s_9iuj9WDlM?si=lMDYcLHazYRXjG0C" },
+  { title: "Doja Cat - Jealous Type", style: "Jazz-Funk", url: "https://youtu.be/gYcLw0oJ2Hw?si=B3MOvT2hK3iVak6J" },
+  { title: "Tate McRae - TIT FOR TAT", style: "Jazz-Funk", url: "https://youtu.be/l5GDy-8PIYs?si=Qy1gtIuuL21591KE" },
+  { title: "Tate McRae - It's ok I'm ok", style: "Jazz-Funk", url: "https://youtu.be/NrNpFi1x8Bw?si=TVMm7mv_EJ6KEKe-" },
 ];
 
 // Video projects (short films, music videos, etc.)

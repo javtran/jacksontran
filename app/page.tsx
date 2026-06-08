@@ -40,7 +40,7 @@ export default function Page() {
 	if (!mounted) return <div></div>;
 
 	return (
-		<main>
+		<main className="h-screen h-[100svh] h-[100dvh]">
 			<ScrollProgress />
 			<div className="background fixed w-screen h-screen"></div>
 			<motion.ul variants={container} initial="hidden" animate="visible">
